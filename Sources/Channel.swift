@@ -92,9 +92,9 @@ public class Channel {
      Leaves the socket
      - parameter message: Message to pass to the Socket#leave function
      */
-    func leave(message: Message) {
+    func leave() {
         if let sock = socket {
-            sock.leave(topic: topic!, message: message)
+            sock.leave(topic: topic!)
         }
         reset()
     }
