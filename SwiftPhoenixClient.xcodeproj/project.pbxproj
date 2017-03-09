@@ -28,6 +28,7 @@
 		451B965D1E6F96A700B3AC0B /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE4FF1DA84FF2000B3CD3 /* Payload.swift */; };
 		451B965E1E6F96A700B3AC0B /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE5001DA84FF2000B3CD3 /* Serializable.swift */; };
 		451B965F1E6F96AA00B3AC0B /* SwiftPhoenixClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BFAE4E71DA84F59000B3CD3 /* SwiftPhoenixClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		451B968D1E7112C100B3AC0B /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451B968C1E7112C100B3AC0B /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,13 @@
 		451B96461E6F84A700B3AC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		451B96541E6F968D00B3AC0B /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../../Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 		451B96561E6F969A00B3AC0B /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../../Build/tvOS/Starscream.framework; sourceTree = "<group>"; };
+		451B968C1E7112C100B3AC0B /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../../../../../Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		451B96941E71133B00B3AC0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		451B96961E71133B00B3AC0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		451B96991E71133B00B3AC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		451B969B1E71133B00B3AC0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		451B969E1E71133B00B3AC0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		451B96A01E71133B00B3AC0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451B968D1E7112C100B3AC0B /* Starscream.framework in Frameworks */,
 				0BFAE4EE1DA84F59000B3CD3 /* SwiftPhoenixClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +104,7 @@
 				0BFAE4E61DA84F59000B3CD3 /* SwiftPhoenixClient */,
 				0BFAE4F11DA84F59000B3CD3 /* Tests */,
 				451B96441E6F84A700B3AC0B /* SwiftPhoenixClient-tvOS */,
+				451B96931E71133B00B3AC0B /* HostApplication */,
 				0BFAE4E51DA84F59000B3CD3 /* Products */,
 				0BFAE5071DA853B5000B3CD3 /* Frameworks */,
 			);
@@ -139,6 +149,7 @@
 		0BFAE5071DA853B5000B3CD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				451B968C1E7112C100B3AC0B /* Starscream.framework */,
 				451B96561E6F969A00B3AC0B /* Starscream.framework */,
 				451B96541E6F968D00B3AC0B /* Starscream.framework */,
 			);
@@ -152,6 +163,19 @@
 				451B96461E6F84A700B3AC0B /* Info.plist */,
 			);
 			path = "SwiftPhoenixClient-tvOS";
+			sourceTree = "<group>";
+		};
+		451B96931E71133B00B3AC0B /* HostApplication */ = {
+			isa = PBXGroup;
+			children = (
+				451B96941E71133B00B3AC0B /* AppDelegate.swift */,
+				451B96961E71133B00B3AC0B /* ViewController.swift */,
+				451B96981E71133B00B3AC0B /* Main.storyboard */,
+				451B969B1E71133B00B3AC0B /* Assets.xcassets */,
+				451B969D1E71133B00B3AC0B /* LaunchScreen.storyboard */,
+				451B96A01E71133B00B3AC0B /* Info.plist */,
+			);
+			path = HostApplication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +226,7 @@
 				0BFAE4E91DA84F59000B3CD3 /* Sources */,
 				0BFAE4EA1DA84F59000B3CD3 /* Frameworks */,
 				0BFAE4EB1DA84F59000B3CD3 /* Resources */,
+				451B96A41E71135100B3AC0B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -237,7 +262,7 @@
 		0BFAE4DB1DA84F59000B3CD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0800;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0800;
 				TargetAttributes = {
 					0BFAE4E31DA84F59000B3CD3 = {
@@ -261,6 +286,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0BFAE4DA1DA84F59000B3CD3;
 			productRefGroup = 0BFAE4E51DA84F59000B3CD3 /* Products */;
@@ -297,6 +323,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		451B96A41E71135100B3AC0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Starscream.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0BFAE4DF1DA84F59000B3CD3 /* Sources */ = {
@@ -344,6 +387,25 @@
 			targetProxy = 0BFAE4EF1DA84F59000B3CD3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		451B96981E71133B00B3AC0B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451B96991E71133B00B3AC0B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		451B969D1E71133B00B3AC0B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				451B969E1E71133B00B3AC0B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0BFAE4F61DA84F59000B3CD3 /* Debug */ = {
@@ -490,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClientTests;
@@ -502,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClientTests;
