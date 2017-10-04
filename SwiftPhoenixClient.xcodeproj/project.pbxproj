@@ -58,7 +58,6 @@
 		0BFAE5001DA84FF2000B3CD3 /* Serializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Serializable.swift; sourceTree = "<group>"; };
 		0BFAE50B1DA85527000B3CD3 /* PathTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathTests.swift; sourceTree = "<group>"; };
 		45B826B71F848ABB006BB0A5 /* SwiftPhoenixClient tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "SwiftPhoenixClient tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45B826B81F848ABC006BB0A5 /* SwiftPhoenixClient copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftPhoenixClient copy-Info.plist"; path = "/Users/crusher/zova/project_run/Carthage/Checkouts/ZVKit/Carthage/Checkouts/SwiftPhoenixClient/SwiftPhoenixClient copy-Info.plist"; sourceTree = "<absolute>"; };
 		635CB1F21F7415F400438844 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		63CD642D1DB11E8400C406A6 /* Presence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presence.swift; sourceTree = "<group>"; };
 		63CD64311DB1272400C406A6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 				451B96931E71133B00B3AC0B /* HostApplication */,
 				0BFAE4E51DA84F59000B3CD3 /* Products */,
 				0BFAE5071DA853B5000B3CD3 /* Frameworks */,
-				45B826B81F848ABC006BB0A5 /* SwiftPhoenixClient copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -585,7 +583,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				INFOPLIST_FILE = "SwiftPhoenixClient copy-Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
@@ -609,7 +607,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
-				INFOPLIST_FILE = "SwiftPhoenixClient copy-Info.plist";
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
