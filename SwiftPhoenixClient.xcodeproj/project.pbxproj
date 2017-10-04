@@ -590,6 +590,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -613,6 +614,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -660,6 +662,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
 				PRODUCT_NAME = SwiftPhoenixClient;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -683,6 +686,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.phoenixframework.SwiftPhoenixClient;
 				PRODUCT_NAME = SwiftPhoenixClient;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
