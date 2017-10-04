@@ -94,7 +94,7 @@ public class Channel {
      */
     public func leave(message: Message) {
         if let sock = socket {
-            sock.leave(topic: topic!)
+            sock.leave(topic: topic!, message: message)
         }
         reset()
     }

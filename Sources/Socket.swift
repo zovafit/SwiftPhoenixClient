@@ -198,7 +198,7 @@ public class Socket: WebSocketDelegate {
      - parameter topic:   String topic name
      - parameter message: Message payload
      */
-    public func leave(topic: String) {
+    public func leave(topic: String, message: Message) {
         let leavingMessage = Message(subject: "status", body: "leaving" as Any)
         let payload = Payload(topic: topic, event: "phx_leave", message: leavingMessage)
         send(data: payload)
