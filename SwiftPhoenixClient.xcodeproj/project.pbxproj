@@ -16,10 +16,7 @@
 		0BFAE5011DA84FF2000B3CD3 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE4FE1DA84FF2000B3CD3 /* Path.swift */; };
 		0BFAE5021DA84FF2000B3CD3 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE4FF1DA84FF2000B3CD3 /* Payload.swift */; };
 		0BFAE5031DA84FF2000B3CD3 /* Serializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE5001DA84FF2000B3CD3 /* Serializable.swift */; };
-		0BFAE5091DA853B5000B3CD3 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFAE5081DA853B5000B3CD3 /* Starscream.framework */; };
 		0BFAE50C1DA85527000B3CD3 /* PathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFAE50B1DA85527000B3CD3 /* PathTests.swift */; };
-		45ACA3D21F84904A005A711A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B826DF1F849019006BB0A5 /* Starscream.framework */; };
-		45ACA3D31F849052005A711A /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B826E71F849019006BB0A5 /* Starscream.framework */; };
 		45B826BB1F848E9A006BB0A5 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E21DAC11C80093A015 /* Socket.swift */; };
 		45B826BC1F848E9A006BB0A5 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E61DAC38E00093A015 /* Binding.swift */; };
 		45B826BD1F848E9A006BB0A5 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8517E41DAC12F40093A015 /* Channel.swift */; };
@@ -34,6 +31,9 @@
 		635CB1F31F7415F400438844 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635CB1F21F7415F400438844 /* Logger.swift */; };
 		63CD642E1DB11E8400C406A6 /* Presence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD642D1DB11E8400C406A6 /* Presence.swift */; };
 		63CD64321DB1272400C406A6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CD64311DB1272400C406A6 /* Response.swift */; };
+		E31375211F85D446008F199C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E313751F1F85D420008F199C /* Starscream.framework */; };
+		E31375241F85D453008F199C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31375221F85D44F008F199C /* Starscream.framework */; };
+		E31375251F85D492008F199C /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E31375221F85D44F008F199C /* Starscream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +111,8 @@
 		635CB1F21F7415F400438844 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		63CD642D1DB11E8400C406A6 /* Presence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presence.swift; sourceTree = "<group>"; };
 		63CD64311DB1272400C406A6 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		E313751F1F85D420008F199C /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../../Build/tvOS/Starscream.framework; sourceTree = "<group>"; };
+		E31375221F85D44F008F199C /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../../Build/iOS/Starscream.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45ACA3D21F84904A005A711A /* Starscream.framework in Frameworks */,
+				E31375241F85D453008F199C /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BFAE5091DA853B5000B3CD3 /* Starscream.framework in Frameworks */,
+				E31375251F85D492008F199C /* Starscream.framework in Frameworks */,
 				0BFAE4EE1DA84F59000B3CD3 /* SwiftPhoenixClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45ACA3D31F849052005A711A /* Starscream.framework in Frameworks */,
+				E31375211F85D446008F199C /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +196,8 @@
 		0BFAE5071DA853B5000B3CD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E313751F1F85D420008F199C /* Starscream.framework */,
+				E31375221F85D44F008F199C /* Starscream.framework */,
 				45B826D51F849018006BB0A5 /* Starscream.xcodeproj */,
 				45B826D41F848F18006BB0A5 /* Starscream.framework */,
 				45B826D21F848F12006BB0A5 /* Starscream.framework */,
